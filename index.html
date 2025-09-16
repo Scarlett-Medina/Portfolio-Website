@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scarlett Medina | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/icons8-resume-48.ico">
+
+  <!-- General Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Animation -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">SM</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Scarlett Medina.</h1>
+      <p><span class="typewriter" id="typewriter-text"></span></p>
+      <!--<a href="#projects" class="cta-btn">See My Work</a> -->
+    </div>
+
+    <!-- Mouse scroll icon -->
+  <div class="mouse-icon">
+    <div class="scroll"></div>
+  </div>
+  </section>
+
+ <!-- About Section -->
+ <section id="about" class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Photo Side -->
+      <div class="about-photo">
+        <div class="photo-wrapper">
+          <div class="photo-bg"></div>
+          <img src="assets/profile.jpg" alt="Scarlett Medina" class="profile-img" />
+        </div>
+      </div>
+
+      <!-- Content Side -->
+      <div class="about-content">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about-text">
+          <p>
+            I'm Scarlett Medina, a Computer Science graduate with a passion for developing clean, scalable, and human-centered applications.
+          </p>
+          <p>
+            My tech journey started with curiosity and grew into a love for solving meaningful problems through code. I’m especially drawn to full-stack development using Java, APIs, and intuitive UIs.
+          </p>
+          <p>
+            Outside of tech, I enjoy traveling, learning languages, and going to the gym. I recently studied abroad in Spain and am fluent in English and Spanish.
+          </p>
+
+          <div class="skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>APIs</span>
+            <span>MySQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+        </div>
+
+        <div class="download-container">
+          <a href="assets/Scarlett_Medina_Resume (1).docx" class="download-btn" download>
+            <span><i class="fas fa-download"></i></span> Download Resume
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Projects  -->
+<!-- Projects -->
+<section id="projects" class="projects-section">
+  <div class="projects-container">
+    <h2 class="projects-title"><span>My</span> Projects</h2>
+
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+      <div class="project-image">
+        <img src="assets/moviefinder.jpg" alt="Movie Finder App">
+        <div class="project-overlay">
+          <a href="https://github.com/Scarlett-Medina/Movie-Finder-Springboot-Omdb" target="_blank" class="btn code-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <!--
+          <a href="#" target="_blank" class="btn demo-btn">
+            <i class="fas fa-arrow-up-right-from-square"></i> Demo
+          </a>
+          -->
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Movie Info Finder App</h3>
+        <p>Full-stack Java app with Spring Boot and OMDb API to search and display detailed movie data.</p>
+        <div class="tech-tags">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>JavaScript</span>
+          <span>OMDb API</span>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Project 2 -->
+      <div class="project-card">
+      <div class="project-image">
+        <img src="assets/AIproject.png" alt="Explainable Loan Model">
+        <div class="project-overlay">
+          <a href="https://github.com/Scarlett-Medina/Explainable-Loan-Model-Hmda2022" target="_blank" class="btn code-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <!--
+          <a href="#" class="btn demo-btn">
+            <i class="fas fa-arrow-up-right-from-square"></i> Demo
+          </a>
+        -->
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Explainable Loan Model</h3>
+        <p>Fairness-focused ML project using SHAP and XGBoost to uncover bias in loan approvals with the HMDA 2022 dataset.</p>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>XGBoost</span>
+          <span>SHAP</span>
+          <span>SMOTE</span>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Project 3 -->
+      <div class="project-card">
+      <div class="project-image">
+        <img src="assets/wateramerica.png" alt="Water America Service Transfer Portal">
+        <div class="project-overlay">
+          <a href="https://github.com/elapierre/WaterAmerica" target="_blank" class="btn code-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <!--
+          <a href="#" class="btn demo-btn">
+            <i class="fas fa-arrow-up-right-from-square"></i> Demo
+          </a>
+          -->
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Water America Portal</h3>
+        <p>Web portal for customers to request water service transfers. Features address validation via Google API, SMS alerts, email confirmation, and client-side interactivity using JavaScript.</p>
+        <div class="tech-tags">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>JavaScript</span>
+          <span>Google API</span>
+          <span>SMS API</span>
+          <span>Email API</span>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Project 4 -->
+      <div class="project-card">
+      <div class="project-image">
+        <img src="assets/podomoro.png" alt="Pomodoro Timer Productivity App">
+        <div class="project-overlay">
+          <a href="https://github.com/Scarlett-Medina/pomodoro-timer" target="_blank" class="btn code-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <!--
+          <a href="#" class="btn demo-btn">
+            <i class="fas fa-arrow-up-right-from-square"></i> Demo
+          </a>
+          -->
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Pomodoro Timer</h3>
+        <p>Focus timer app with task tracking, auto-start sessions, and responsive layout built with vanilla JavaScript.</p>
+        <div class="tech-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2 class="contact-title">Get In <span>Touch</span></h2>
+    <p class="contact-subtitle">
+      I'm always open to discussing new opportunities, interesting projects, or just having a chat about web development. Let's connect!
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <p><a href="mailto:scarlettmedinacabr@gmail.com">scarlettmedinacabr@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-github"></i>
+        <h4>GitHub</h4>
+        <p><a href="https://github.com/Scarlett-Medina" target="_blank">github.com/Scarlett-Medina</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <h4>LinkedIn</h4>
+        <p><a href="https://www.linkedin.com/in/scarlett-medina-/" target="_blank">linkedin.com/in/scarlett-medina-</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone-alt"></i>
+        <h4>Phone</h4>
+        <p><a href="tel:+16096866229">(609) 686-6229</a></p>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <h3>Ready to work together?</h3>
+      <p>I'm currently available for freelance projects and full-time opportunities.</p>
+      <a href="mailto:scarlettmedinacabr@gmail.com" class="cta-btn">
+        <i class="fas fa-paper-plane"></i> Let's Talk
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  
+
+  
+  <!-- Arrow to Top -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+
+  <!-- Animation -->
+
+  <!-- Number 1
+
+  <lottie-player 
+  src="https://assets7.lottiefiles.com/packages/lf20_j1adxtyb.json" 
+  background="transparent"  
+  speed="1"  
+  style="position: fixed; bottom: 20px; left: 20px; width: 100px; height: 100px; z-index: 999;"  
+  loop  
+  autoplay>
+  </lottie-player>
+
+  -->
+
+  <!-- Number 2
+
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+
+  <dotlottie-wc 
+    src="https://lottie.host/f073f77a-ae0e-49f6-872f-6b13263b0b56/uXKdHKobGu.lottie" 
+    style="
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+      z-index: 999;
+      pointer-events: none;" 
+    speed="1" 
+    autoplay 
+    loop>
+  </dotlottie-wc>
+  -->
+
+
+</body>
+</html>

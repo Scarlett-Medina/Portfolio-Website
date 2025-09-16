@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Scarlett Medina</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar (reuse your existing navbar) -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Scarlett Medina</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <div class="projects-container">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="assets/project1.jpg" alt="Movie Finder App" />
+          <div class="project-info">
+            <h3>Movie Finder App</h3>
+            <p>A full-stack app using OMDb API and Spring Boot to search movie data.</p>
+            <a href="https://github.com/Scarlett-Medina/movie-finder" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="assets/project2.jpg" alt="Crime Prediction Model" />
+          <div class="project-info">
+            <h3>Crime Prediction Model</h3>
+            <p>Fair AI model using LA Crime Data and explainable machine learning.</p>
+            <a href="https://github.com/Scarlett-Medina/crime-predictor" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Add more project cards as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional scroll to top button -->
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
